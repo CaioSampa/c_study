@@ -20,7 +20,7 @@ struct food
 };
 // we can access the fields of the struct with ->
 void set_price (struct car *p, float new_price) {
-    p->price = new_price;
+    p->price = new_price; // or (*p).price = new_price; works but is ugly
 }
 
 int main (void){
@@ -30,8 +30,14 @@ int main (void){
     palio.name = "palio fire";
     palio.price = 19999.99;
     palio.speed = 250;
-
+    
     struct car *pointer_to_car = &palio; 
+
+    /*
+    we can use arrow operator out a function, just works with a pointer the palio variable dont work.
+    */
+    pointer_to_car->name = "palio king of roads"; 
+
 
     set_price(pointer_to_car, 370.45); // or we can pass to the function &palio that works to
 
