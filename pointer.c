@@ -11,6 +11,9 @@ int main(void)
     int tmp = 0;
 
     *p = 15;
+
+    // *P is a pointer and &i is a pointer to
+
     printf("address of i %p \n", &i);
     printf("address of pointer P %p \n", &p);
     printf("the value of j is %d and the value of K is %d \n", j, k);
@@ -32,4 +35,4 @@ int main(void)
     return 0;
 }
 
-void sumVariable(int *n) { *n+=1; }
+void sumVariable(int *n) { n+=1; }
