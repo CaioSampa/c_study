@@ -13,7 +13,7 @@ int main (void)
    int n;
 
    //converter string para int
-   sscanf(num,"%d",&n);
+   int res = sscanf(num,"%d",&n);
 
    printf("The number is : %d", n);
 

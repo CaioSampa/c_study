@@ -12,7 +12,7 @@ int main (void) {
 
     int arr[] = {944,625,7001};   
 
-    // inicialiando array com de inteiros com todos valores sendo zero
+    // inicialiando array de tamanho 100 com inteiros sendo todos valores sendo zero
     int array[100] = {0};
 
     int *pointer;
